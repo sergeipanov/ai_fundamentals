@@ -7,6 +7,7 @@ import { ProgressBar } from "@/components/progress-bar"
 import { FlipCard } from "@/components/flip-card"
 import { QuizQuestion } from "@/components/quiz-question"
 import { SortingActivity } from "@/components/sorting-activity"
+import { Footer } from "@/components/footer"
 import { ChevronLeft, ChevronRight, CheckCircle, Play, BookOpen, Clock, Users } from "lucide-react"
 import { useRouter } from "next/navigation"
 import Image from "next/image"
@@ -268,6 +269,7 @@ export default function Module1() {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     )
   }
@@ -407,6 +409,7 @@ export default function Module1() {
           </Button>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

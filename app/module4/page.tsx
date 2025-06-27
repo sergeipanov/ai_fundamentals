@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ProgressBar } from "@/components/progress-bar"
 import { QuizQuestion } from "@/components/quiz-question"
+import { Footer } from "@/components/footer"
 import { ChevronLeft, ChevronRight, CheckCircle } from "lucide-react"
 import { useRouter } from "next/navigation"
 
@@ -69,8 +70,8 @@ export default function Module4() {
       color: "from-amber-100 to-soft-blue-100",
     },
     {
-      title: "Wrap-Up and Fun Challenge",
-      icon: "🏆",
+      title: "Wrap-Up and Action Plan",
+      icon: "📋",
       color: "from-soft-blue-100 to-coral-100",
     },
   ]
@@ -101,9 +102,8 @@ export default function Module4() {
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">🏢 Module 4: AI in Your Organization</h1>
           <p className="text-lg text-gray-600 font-medium">
-            Step into the world of AI tailored to your organization! This module explores how AI fits into your industry
-            or company, uncovering opportunities, challenges, and ways to team up with AI experts. Get ready for an
-            engaging and insightful adventure!
+            Discover how AI transforms organizations and your role in this exciting journey! This module explores AI's
+            impact on teams, processes, and collaboration. Get ready for engaging scenarios and actionable insights!
           </p>
         </div>
 
@@ -214,7 +214,7 @@ export default function Module4() {
                     ? "bg-green-500 border-green-600"
                     : "bg-gray-300 border-gray-400"
               }`}
-              title="Section 6: Wrap-Up and Fun Challenge"
+              title="Section 6: Wrap-Up and Action Plan"
             />
           </div>
         </div>
@@ -275,6 +275,7 @@ export default function Module4() {
           </button>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
@@ -292,66 +293,67 @@ function Section1({ onComplete }: { onComplete: () => void }) {
     <div className="space-y-6">
       <div className="speech-bubble mb-6">
         <p className="text-lg leading-relaxed text-gray-700 mb-4">
-          <strong>AI isn't just a buzzword—it's shaping your workplace!</strong> Whether you're in healthcare, retail,
-          or finance, AI can streamline tasks, predict trends, or enhance customer experiences. Understanding its role
-          helps you contribute to your organization's success.
+          <strong>AI is reshaping how organizations operate!</strong> From automating routine tasks to enhancing
+          decision-making, AI helps teams work smarter, not harder. Understanding AI's role in your organization
+          positions you as a valuable contributor to digital transformation.
         </p>
       </div>
 
       <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-400 mb-6">
-        <h3 className="font-bold text-lg text-blue-800 mb-3">🚀 Fun Fact</h3>
+        <h3 className="font-bold text-lg text-blue-800 mb-3">🚀 The Big Picture</h3>
         <p className="text-gray-700 leading-relaxed">
-          Companies using AI effectively can see productivity boosts of up to 30% in some industries!
+          Organizations use AI to improve efficiency, reduce costs, and create better customer experiences. Your role is
+          to understand, adapt, and collaborate with AI systems to drive success.
         </p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-6 mb-6">
         <div className="bg-coral-50 p-6 rounded-lg border-2 border-coral-200">
-          <h3 className="font-bold text-lg text-coral-800 mb-3">🏥 Healthcare</h3>
+          <h3 className="font-bold text-lg text-coral-800 mb-3">💼 Business Operations</h3>
           <ul className="space-y-2 text-gray-700">
-            <li>• AI diagnoses diseases from medical images</li>
-            <li>• Predictive analytics for patient care</li>
-            <li>• Automated appointment scheduling</li>
-            <li>• Drug discovery acceleration</li>
+            <li>• Automated report generation</li>
+            <li>• Intelligent scheduling systems</li>
+            <li>• Predictive maintenance alerts</li>
+            <li>• Smart inventory management</li>
           </ul>
         </div>
 
         <div className="bg-amber-50 p-6 rounded-lg border-2 border-amber-200">
-          <h3 className="font-bold text-lg text-amber-800 mb-3">🛒 Retail</h3>
+          <h3 className="font-bold text-lg text-amber-800 mb-3">👥 Human Resources</h3>
           <ul className="space-y-2 text-gray-700">
-            <li>• Personalized product recommendations</li>
-            <li>• Inventory management optimization</li>
-            <li>• Dynamic pricing strategies</li>
-            <li>• Customer service chatbots</li>
+            <li>• Resume screening and matching</li>
+            <li>• Employee performance insights</li>
+            <li>• Training recommendation systems</li>
+            <li>• Workplace sentiment analysis</li>
           </ul>
         </div>
 
         <div className="bg-soft-blue-50 p-6 rounded-lg border-2 border-soft-blue-200">
-          <h3 className="font-bold text-lg text-soft-blue-800 mb-3">💰 Finance</h3>
+          <h3 className="font-bold text-lg text-soft-blue-800 mb-3">🛒 Customer Experience</h3>
           <ul className="space-y-2 text-gray-700">
-            <li>• Fraud detection and prevention</li>
-            <li>• Algorithmic trading systems</li>
-            <li>• Credit risk assessment</li>
-            <li>• Automated financial reporting</li>
+            <li>• 24/7 chatbot support</li>
+            <li>• Personalized product recommendations</li>
+            <li>• Fraud detection systems</li>
+            <li>• Customer behavior analytics</li>
           </ul>
         </div>
 
         <div className="bg-green-50 p-6 rounded-lg border-2 border-green-200">
-          <h3 className="font-bold text-lg text-green-800 mb-3">🏭 Manufacturing</h3>
+          <h3 className="font-bold text-lg text-green-800 mb-3">📊 Data & Analytics</h3>
           <ul className="space-y-2 text-gray-700">
-            <li>• Predictive maintenance systems</li>
-            <li>• Quality control automation</li>
-            <li>• Supply chain optimization</li>
-            <li>• Production planning AI</li>
+            <li>• Market trend predictions</li>
+            <li>• Risk assessment models</li>
+            <li>• Performance dashboards</li>
+            <li>• Automated data cleaning</li>
           </ul>
         </div>
       </div>
 
-      <div className="bg-purple-50 p-6 rounded-lg border-2 border-purple-200">
-        <h3 className="font-bold text-lg text-purple-800 mb-3">🎯 Your Industry Impact</h3>
-        <p className="text-gray-700 leading-relaxed">
-          No matter your field, AI can enhance efficiency, reduce costs, and create new opportunities. The key is
-          identifying where AI fits naturally into your existing workflows and processes.
+      <div className="bg-yellow-100 p-4 rounded-lg border-2 border-yellow-300">
+        <h4 className="font-bold text-yellow-800 mb-2">💡 Your Role</h4>
+        <p className="text-yellow-700">
+          You don't need to build AI systems, but understanding how they work helps you collaborate effectively and
+          identify opportunities for improvement in your daily work.
         </p>
       </div>
 
@@ -376,12 +378,12 @@ function Section1({ onComplete }: { onComplete: () => void }) {
             e.target.style.backgroundColor = isCompleted ? "#10b981" : "#ed7c47"
           }}
         >
-          {isCompleted ? "✅ Section Complete!" : "🌍 I See AI's Potential!"}
+          {isCompleted ? "✅ Section Complete!" : "🌍 I See AI's Impact!"}
         </button>
 
         {isCompleted && (
           <p className="mt-3 text-green-600 font-medium">
-            Excellent! Now let's dive into the key concepts of organizational AI!
+            Excellent! Now let's explore the key concepts that drive AI in organizations!
           </p>
         )}
       </div>
@@ -401,63 +403,72 @@ function Section2({ onComplete }: { onComplete: () => void }) {
     <div className="space-y-6">
       <div className="speech-bubble mb-6">
         <p className="text-lg text-gray-700">
-          Let's explore the essential concepts that drive AI success in organizations! Understanding these will help you
-          navigate AI initiatives in your workplace. 🏢
+          Let's explore the fundamental concepts that make AI successful in organizational settings! Understanding these
+          will help you contribute meaningfully to AI initiatives. 🏢
         </p>
       </div>
 
       <div className="grid md:grid-cols-1 gap-6 mb-6">
         <div className="bg-coral-50 p-6 rounded-lg border-2 border-coral-200">
-          <h3 className="font-bold text-lg text-coral-800 mb-3">🚀 Opportunities for AI Adoption</h3>
+          <h3 className="font-bold text-lg text-coral-800 mb-3">🤖 Automation vs. Augmentation</h3>
           <p className="text-gray-700 leading-relaxed mb-3">
-            AI can automate repetitive tasks (e.g., data entry), provide insights (e.g., sales forecasts), or improve
-            customer service (e.g., chatbots). Imagine the possibilities in your role!
+            <strong>Automation:</strong> AI replaces human tasks (e.g., sorting emails). <strong>Augmentation:</strong>{" "}
+            AI enhances human capabilities (e.g., suggesting responses). Most successful AI implementations focus on
+            augmentation.
           </p>
           <div className="bg-white p-3 rounded border-l-4 border-coral-400">
             <p className="text-sm text-gray-600">
-              <strong>Examples:</strong> Automated report generation, predictive analytics for planning, intelligent
-              document processing, personalized customer interactions
+              <strong>Example:</strong> A doctor uses AI to analyze X-rays faster, but still makes the final diagnosis.
             </p>
           </div>
         </div>
 
         <div className="bg-amber-50 p-6 rounded-lg border-2 border-amber-200">
-          <h3 className="font-bold text-lg text-amber-800 mb-3">⚠️ Challenges</h3>
+          <h3 className="font-bold text-lg text-amber-800 mb-3">📈 Scalability and Efficiency</h3>
           <p className="text-gray-700 leading-relaxed mb-3">
-            Issues like data privacy, cost, or resistance to change can slow AI adoption. Overcoming these requires
-            planning and teamwork.
+            AI excels at handling large volumes of data and repetitive tasks, freeing humans to focus on creative,
+            strategic, and relationship-building work.
           </p>
           <div className="bg-white p-3 rounded border-l-4 border-amber-400">
             <p className="text-sm text-gray-600">
-              <strong>Common challenges:</strong> High implementation costs, data quality issues, employee training
-              needs, integration with existing systems, regulatory compliance
+              <strong>Example:</strong> AI processes thousands of customer inquiries while humans handle complex
+              complaints.
             </p>
           </div>
         </div>
 
         <div className="bg-soft-blue-50 p-6 rounded-lg border-2 border-soft-blue-200">
-          <h3 className="font-bold text-lg text-soft-blue-800 mb-3">🤝 Collaborating with AI Teams</h3>
+          <h3 className="font-bold text-lg text-soft-blue-800 mb-3">🔄 Continuous Learning</h3>
           <p className="text-gray-700 leading-relaxed mb-3">
-            Partnering with tech experts ensures AI aligns with your goals—think of it as a bridge between ideas and
-            action.
+            AI systems improve over time by learning from new data and feedback, making them more valuable as they're
+            used.
           </p>
           <div className="bg-white p-3 rounded border-l-4 border-soft-blue-400">
             <p className="text-sm text-gray-600">
-              <strong>Collaboration tips:</strong> Clearly communicate business needs, provide domain expertise, test AI
-              solutions, give feedback on results, champion adoption
+              <strong>Example:</strong> A recommendation system gets better at suggesting products as it learns customer
+              preferences.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-green-50 p-6 rounded-lg border-2 border-green-200">
+          <h3 className="font-bold text-lg text-green-800 mb-3">🎯 Data-Driven Decision Making</h3>
+          <p className="text-gray-700 leading-relaxed mb-3">
+            AI analyzes patterns in data to provide insights that inform better business decisions, reducing guesswork
+            and improving outcomes.
+          </p>
+          <div className="bg-white p-3 rounded border-l-4 border-green-400">
+            <p className="text-sm text-gray-600">
+              <strong>Example:</strong> AI analyzes sales data to predict which products will be popular next season.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="bg-yellow-100 p-4 rounded-lg border-2 border-yellow-300">
-        <h4 className="font-bold text-yellow-800 mb-2">🤔 Quick Reflection</h4>
-        <p className="text-yellow-700">
-          What's one task in your job that AI could enhance?
-          <br />
-          <span className="text-sm italic">
-            (Think about repetitive tasks, data analysis, or customer interactions!)
-          </span>
+      <div className="bg-purple-100 p-4 rounded-lg border-2 border-purple-300">
+        <h4 className="font-bold text-purple-800 mb-2">🤔 Reflection Question</h4>
+        <p className="text-purple-700">
+          Think about your current role: Where could AI augment (not replace) your work to make you more effective?
         </p>
       </div>
 
@@ -482,11 +493,11 @@ function Section2({ onComplete }: { onComplete: () => void }) {
             e.target.style.backgroundColor = isCompleted ? "#10b981" : "#ed7c47"
           }}
         >
-          {isCompleted ? "✅ Section Complete!" : "🏢 I Understand Organizational AI!"}
+          {isCompleted ? "✅ Section Complete!" : "🏢 I Understand AI in Organizations!"}
         </button>
 
         {isCompleted && (
-          <p className="mt-3 text-green-600 font-medium">Perfect! Ready to tackle a real-world scenario?</p>
+          <p className="mt-3 text-green-600 font-medium">Perfect! Ready to apply this knowledge to real scenarios?</p>
         )}
       </div>
     </div>
@@ -494,145 +505,187 @@ function Section2({ onComplete }: { onComplete: () => void }) {
 }
 
 function Section3({ onComplete }: { onComplete: () => void }) {
-  const [selectedOption, setSelectedOption] = useState<string | null>(null)
-  const [showAnswer, setShowAnswer] = useState(false)
+  const [selectedDecisions, setSelectedDecisions] = useState<{ [key: string]: string }>({})
+  const [showResults, setShowResults] = useState(false)
   const [isCompleted, setIsCompleted] = useState(false)
 
-  const options = [
+  const scenarios = [
     {
-      id: "A",
-      text: "Approve the AI's recommendation and order 500 units.",
-      correct: false,
-      explanation: "This ignores the market change and could lead to excess inventory.",
+      id: "customer-service",
+      title: "Customer Service Overload",
+      description:
+        "Your customer service team is overwhelmed with 500+ daily inquiries, 70% of which are basic questions like 'How do I reset my password?' Response times are slow, and customer satisfaction is declining.",
+      options: [
+        { id: "hire-more", text: "Hire more customer service representatives", correct: false },
+        { id: "chatbot", text: "Implement an AI chatbot for common questions", correct: true },
+        { id: "ignore", text: "Ignore the problem and hope it improves", correct: false },
+      ],
+      explanation:
+        "An AI chatbot can handle 70% of basic inquiries instantly, freeing human agents to focus on complex issues that require empathy and problem-solving skills.",
     },
     {
-      id: "B",
-      text: "Adjust the order to 250 units and monitor competitor impact.",
-      correct: true,
-      explanation: "This balances AI insights with market awareness, showing smart adaptability.",
+      id: "data-analysis",
+      title: "Monthly Report Bottleneck",
+      description:
+        "Your team spends 2 days each month manually compiling sales data from multiple sources into reports. This delays decision-making and frustrates stakeholders waiting for insights.",
+      options: [
+        { id: "work-overtime", text: "Ask team to work overtime to finish faster", correct: false },
+        { id: "ai-automation", text: "Use AI to automate data compilation and report generation", correct: true },
+        { id: "reduce-reports", text: "Reduce the frequency of reports to quarterly", correct: false },
+      ],
+      explanation:
+        "AI can automatically gather, clean, and analyze data from multiple sources, generating reports in minutes instead of days, allowing for faster decision-making.",
     },
     {
-      id: "C",
-      text: "Reject the AI suggestion and rely on manual checks.",
-      correct: false,
-      explanation: "This completely dismisses valuable AI data without considering its benefits.",
+      id: "hiring-process",
+      title: "Recruitment Challenge",
+      description:
+        "HR receives 200+ resumes per job posting but struggles to identify qualified candidates quickly. The manual screening process takes weeks, causing good candidates to accept other offers.",
+      options: [
+        { id: "speed-read", text: "Train HR to read resumes faster", correct: false },
+        { id: "ai-screening", text: "Use AI to pre-screen resumes and rank candidates", correct: true },
+        { id: "fewer-postings", text: "Post fewer job openings to reduce workload", correct: false },
+      ],
+      explanation:
+        "AI can quickly analyze resumes against job requirements, ranking candidates by fit and highlighting key qualifications, speeding up the initial screening process.",
     },
   ]
 
-  const handleOptionSelect = (optionId: string) => {
-    setSelectedOption(optionId)
+  const handleDecisionChange = (scenarioId: string, optionId: string) => {
+    setSelectedDecisions((prev) => ({ ...prev, [scenarioId]: optionId }))
   }
 
-  const checkAnswer = () => {
-    setShowAnswer(true)
-    const selectedOptionData = options.find((opt) => opt.id === selectedOption)
-    if (selectedOptionData?.correct) {
+  const checkResults = () => {
+    setShowResults(true)
+    const allCorrect = scenarios.every((scenario) => {
+      const selectedOption = selectedDecisions[scenario.id]
+      return scenario.options.find((opt) => opt.id === selectedOption)?.correct
+    })
+
+    if (allCorrect) {
       setIsCompleted(true)
       onComplete()
     }
   }
 
   const resetActivity = () => {
-    setSelectedOption(null)
-    setShowAnswer(false)
+    setSelectedDecisions({})
+    setShowResults(false)
     setIsCompleted(false)
   }
+
+  const allScenariosAnswered = scenarios.every((scenario) => selectedDecisions[scenario.id])
 
   return (
     <div className="space-y-6">
       <div className="speech-bubble mb-6">
         <p className="text-lg text-gray-700">
-          Let's put your skills to the test with a fun scenario! Your company is considering AI to improve inventory
-          management in a retail setting. 🎯
+          Time to put your knowledge into action! Read each workplace scenario and choose the best AI-powered solution.
+          Think like a strategic problem-solver! 🎯
+        </p>
+        <p className="text-sm text-gray-600 mt-2">
+          <strong>Instructions:</strong> Select the best decision for each scenario, then check your results.
         </p>
       </div>
 
-      <div className="bg-gray-100 p-6 rounded-lg border-2 border-gray-300 mb-6">
-        <h3 className="font-bold text-lg text-gray-800 mb-3">📋 Scenario</h3>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          The AI suggests reordering 500 units of a popular product based on past sales data. However, a new competitor
-          just launched a similar item, and customers are shifting preferences. Your team must decide:
-        </p>
-      </div>
-
-      {!showAnswer && (
-        <div className="space-y-4">
-          <h4 className="font-bold text-lg text-gray-800 mb-4">Choose the best option:</h4>
-          <div className="space-y-3">
-            {options.map((option) => (
-              <label
-                key={option.id}
-                className={`flex items-start p-4 rounded-lg border-2 cursor-pointer transition-all ${
-                  selectedOption === option.id
-                    ? "border-coral-400 bg-coral-50"
-                    : "border-gray-200 hover:border-coral-200 hover:bg-coral-25"
-                }`}
-              >
-                <input
-                  type="radio"
-                  name="scenario-option"
-                  value={option.id}
-                  checked={selectedOption === option.id}
-                  onChange={() => handleOptionSelect(option.id)}
-                  className="mr-3 mt-1 text-coral-500"
-                />
-                <div>
-                  <span className="font-bold text-coral-800">{option.id})</span>
-                  <span className="ml-2 font-medium text-gray-800">{option.text}</span>
+      {!showResults && (
+        <div className="space-y-6">
+          {scenarios.map((scenario, index) => (
+            <Card key={scenario.id} className="border-2 border-soft-blue-200">
+              <CardHeader>
+                <CardTitle className="text-xl font-bold text-soft-blue-800">
+                  Scenario {index + 1}: {scenario.title}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700 mb-4 leading-relaxed">{scenario.description}</p>
+                <div className="space-y-3">
+                  <p className="font-medium text-gray-800">What would you recommend?</p>
+                  {scenario.options.map((option) => (
+                    <label
+                      key={option.id}
+                      className={`flex items-start p-3 rounded-lg border-2 cursor-pointer transition-all ${
+                        selectedDecisions[scenario.id] === option.id
+                          ? "border-soft-blue-400 bg-soft-blue-50"
+                          : "border-gray-200 hover:border-soft-blue-200 hover:bg-soft-blue-25"
+                      }`}
+                    >
+                      <input
+                        type="radio"
+                        name={scenario.id}
+                        value={option.id}
+                        checked={selectedDecisions[scenario.id] === option.id}
+                        onChange={() => handleDecisionChange(scenario.id, option.id)}
+                        className="mr-3 mt-1 text-soft-blue-500"
+                      />
+                      <span className="font-medium text-gray-800">{option.text}</span>
+                    </label>
+                  ))}
                 </div>
-              </label>
-            ))}
-          </div>
+              </CardContent>
+            </Card>
+          ))}
 
           <div className="text-center">
             <button
-              onClick={checkAnswer}
-              disabled={!selectedOption}
+              onClick={checkResults}
+              disabled={!allScenariosAnswered}
               style={{
-                backgroundColor: selectedOption ? "#ed7c47" : "#e5e7eb",
-                color: selectedOption ? "white" : "#6b7280",
+                backgroundColor: allScenariosAnswered ? "#ed7c47" : "#e5e7eb",
+                color: allScenariosAnswered ? "white" : "#6b7280",
                 border: "none",
                 padding: "12px 24px",
                 borderRadius: "8px",
                 fontSize: "16px",
                 fontWeight: "600",
-                cursor: selectedOption ? "pointer" : "not-allowed",
+                cursor: allScenariosAnswered ? "pointer" : "not-allowed",
               }}
             >
-              🎯 Check My Decision
+              🎯 Check My Strategic Decisions
             </button>
           </div>
         </div>
       )}
 
-      {showAnswer && (
+      {showResults && (
         <div className="space-y-4">
-          <div
-            className={`p-6 rounded-lg border-2 ${
-              isCompleted ? "bg-green-50 border-green-200" : "bg-red-50 border-red-200"
-            }`}
-          >
-            <h3 className={`font-bold text-lg mb-3 ${isCompleted ? "text-green-800" : "text-red-800"}`}>
-              {isCompleted ? "🎉 Correct Answer!" : "❌ Not Quite Right"}
-            </h3>
-            <p className="font-medium mb-3">
-              <strong>Correct Answer: B) Adjust the order to 250 units and monitor competitor impact.</strong>
-            </p>
-            <p className={isCompleted ? "text-green-600" : "text-red-600"}>
-              Adjusting to 250 units balances AI insights with market changes, showing adaptability.
-            </p>
+          <div className="bg-green-50 p-6 rounded-lg border-2 border-green-200">
+            <h3 className="font-bold text-lg text-green-800 mb-3">📊 Results & Explanations</h3>
+            <div className="space-y-4">
+              {scenarios.map((scenario, index) => {
+                const selectedOption = scenario.options.find((opt) => opt.id === selectedDecisions[scenario.id])
+                const isCorrect = selectedOption?.correct
+
+                return (
+                  <div key={scenario.id} className="bg-white p-4 rounded-lg border">
+                    <div className="flex items-start justify-between mb-2">
+                      <h4 className="font-semibold text-gray-800">
+                        Scenario {index + 1}: {scenario.title}
+                      </h4>
+                      {isCorrect ? (
+                        <span className="text-green-600 font-bold">✓ Correct</span>
+                      ) : (
+                        <span className="text-red-600 font-bold">✗ Incorrect</span>
+                      )}
+                    </div>
+                    <p className="text-sm text-gray-600 mb-2">
+                      <strong>Your choice:</strong> {selectedOption?.text}
+                    </p>
+                    <p className="text-sm text-gray-700">
+                      <strong>Explanation:</strong> {scenario.explanation}
+                    </p>
+                  </div>
+                )
+              })}
+            </div>
           </div>
 
-          <div
-            className={`p-4 rounded-lg border ${
-              isCompleted ? "bg-blue-50 border-blue-200" : "bg-yellow-50 border-yellow-200"
-            }`}
-          >
-            <h4 className={`font-bold mb-2 ${isCompleted ? "text-blue-800" : "text-yellow-800"}`}>💡 Feedback</h4>
-            <p className={isCompleted ? "text-blue-700" : "text-yellow-700"}>
+          <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+            <h4 className="font-bold text-blue-800 mb-2">💡 Feedback</h4>
+            <p className="text-blue-700">
               {isCompleted
-                ? "Nice choice! Collaborating with AI means using its data while staying flexible to real-world shifts. You understand how to balance AI insights with human judgment!"
-                : "Good thinking! The key is balancing AI recommendations with current market conditions. AI provides valuable data, but human insight about market changes is equally important. Try again to select the best option!"}
+                ? "Outstanding strategic thinking! You understand how AI can solve real organizational challenges by augmenting human capabilities and improving efficiency."
+                : "Good effort! The key is to look for solutions where AI handles repetitive tasks while humans focus on complex, creative work. Review the explanations to strengthen your strategic AI thinking."}
             </p>
           </div>
 
@@ -656,7 +709,7 @@ function Section3({ onComplete }: { onComplete: () => void }) {
             )}
             {isCompleted && (
               <p className="text-green-600 font-medium">
-                Excellent decision-making! Ready to reflect on AI's impact in your organization?
+                Excellent strategic thinking! Ready to reflect on AI's broader impact?
               </p>
             )}
           </div>
@@ -667,150 +720,133 @@ function Section3({ onComplete }: { onComplete: () => void }) {
 }
 
 function Section4({ onComplete }: { onComplete: () => void }) {
-  const [processImprovement, setProcessImprovement] = useState("")
-  const [challenges, setChallenges] = useState("")
+  const [reflections, setReflections] = useState({
+    positive: "",
+    challenge: "",
+    opportunity: "",
+  })
   const [isCompleted, setIsCompleted] = useState(false)
+
+  const handleReflectionChange = (key: string, value: string) => {
+    setReflections((prev) => ({ ...prev, [key]: value }))
+  }
 
   const handleComplete = () => {
     setIsCompleted(true)
     onComplete()
   }
 
-  const processExamples = [
-    "Scheduling and calendar management",
-    "Report generation and data analysis",
-    "Customer inquiry handling",
-    "Inventory tracking and ordering",
-    "Quality control and testing",
-    "Document processing and filing",
-  ]
-
-  const challengeExamples = [
-    "Employee training and adoption",
-    "Data privacy and security concerns",
-    "Integration with existing systems",
-    "Cost and budget constraints",
-    "Resistance to change",
-    "Maintaining human oversight",
-  ]
+  const allFieldsFilled = Object.values(reflections).every((value) => value.trim().length > 0)
 
   return (
     <div className="space-y-6">
       <div className="speech-bubble mb-6">
         <p className="text-lg text-gray-700 mb-4">
-          Time to think big! Consider how AI could transform your organization and share your thoughts. 💭
+          Time for some thoughtful reflection! Consider AI's impact on your organization and share your insights. This
+          helps solidify your understanding and prepares you for meaningful AI conversations. 💭
         </p>
         <p className="text-sm text-gray-600">
-          <strong>Engagement Tip:</strong> Jot down your ideas and discuss with a colleague or in a team meeting for
-          extra fun!
+          <strong>Engagement Tip:</strong> Think about specific examples from your workplace or industry!
         </p>
       </div>
 
       <div className="space-y-6">
-        <Card className="border-2 border-coral-200">
+        <Card className="border-2 border-green-200">
           <CardHeader>
-            <CardTitle className="text-xl font-bold text-coral-800">🔧 Process Improvement</CardTitle>
+            <CardTitle className="text-xl font-bold text-green-800 flex items-center">
+              <span className="text-2xl mr-3">✨</span>
+              Positive Impact
+            </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-gray-700 mb-4">
-              How might AI improve a specific process in your department (e.g., scheduling, reporting)?
+            <p className="text-gray-700 mb-3">
+              What's one positive way AI could impact your organization or department?
             </p>
             <textarea
-              value={processImprovement}
-              onChange={(e) => setProcessImprovement(e.target.value)}
-              placeholder="Describe how AI could enhance a process in your department..."
-              className="w-full p-3 border-2 border-coral-200 rounded-lg focus:border-coral-400 focus:outline-none h-24 mb-4"
+              value={reflections.positive}
+              onChange={(e) => handleReflectionChange("positive", e.target.value)}
+              placeholder="e.g., AI could automate our monthly reporting, giving us more time for strategic analysis..."
+              className="w-full p-3 border-2 border-green-200 rounded-lg focus:border-green-400 focus:outline-none h-24 resize-none"
             />
-            <div>
-              <p className="text-sm text-coral-600 mb-2">Need inspiration? Try one of these processes:</p>
-              <div className="flex flex-wrap gap-2">
-                {processExamples.map((example, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setProcessImprovement(example)}
-                    className="px-3 py-1 bg-coral-200 text-coral-800 rounded-full text-sm hover:bg-coral-300 transition-colors"
-                  >
-                    {example}
-                  </button>
-                ))}
-              </div>
-            </div>
           </CardContent>
         </Card>
 
         <Card className="border-2 border-amber-200">
           <CardHeader>
-            <CardTitle className="text-xl font-bold text-amber-800">⚠️ Challenges & Solutions</CardTitle>
+            <CardTitle className="text-xl font-bold text-amber-800 flex items-center">
+              <span className="text-2xl mr-3">⚠️</span>
+              Potential Challenge
+            </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-gray-700 mb-4">
-              What challenges might arise, and how could you address them with your team?
+            <p className="text-gray-700 mb-3">
+              What challenge or concern might your organization face when implementing AI?
             </p>
             <textarea
-              value={challenges}
-              onChange={(e) => setChallenges(e.target.value)}
-              placeholder="Identify potential challenges and your solutions..."
-              className="w-full p-3 border-2 border-amber-200 rounded-lg focus:border-amber-400 focus:outline-none h-24 mb-4"
+              value={reflections.challenge}
+              onChange={(e) => handleReflectionChange("challenge", e.target.value)}
+              placeholder="e.g., Team members might worry about job security or need training on new AI tools..."
+              className="w-full p-3 border-2 border-amber-200 rounded-lg focus:border-amber-400 focus:outline-none h-24 resize-none"
             />
-            <div>
-              <p className="text-sm text-amber-600 mb-2">Common challenges to consider:</p>
-              <div className="flex flex-wrap gap-2">
-                {challengeExamples.map((example, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setChallenges(example)}
-                    className="px-3 py-1 bg-amber-200 text-amber-800 rounded-full text-sm hover:bg-amber-300 transition-colors"
-                  >
-                    {example}
-                  </button>
-                ))}
-              </div>
-            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="border-2 border-soft-blue-200">
+          <CardHeader>
+            <CardTitle className="text-xl font-bold text-soft-blue-800 flex items-center">
+              <span className="text-2xl mr-3">🚀</span>
+              Future Opportunity
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-gray-700 mb-3">
+              What exciting opportunity could AI create for your role or career growth?
+            </p>
+            <textarea
+              value={reflections.opportunity}
+              onChange={(e) => handleReflectionChange("opportunity", e.target.value)}
+              placeholder="e.g., I could become the AI champion in my team, helping colleagues adapt to new tools..."
+              className="w-full p-3 border-2 border-soft-blue-200 rounded-lg focus:border-soft-blue-400 focus:outline-none h-24 resize-none"
+            />
           </CardContent>
         </Card>
       </div>
 
-      <div className="text-center space-y-4">
+      {allFieldsFilled && (
+        <div className="bg-purple-100 p-4 rounded-lg border-2 border-purple-300">
+          <h4 className="font-bold text-purple-800 mb-2">🎉 Great Reflections!</h4>
+          <p className="text-purple-700 text-sm">
+            Your thoughtful responses show you're thinking strategically about AI's role in your organization. These
+            insights will be valuable in future AI discussions!
+          </p>
+        </div>
+      )}
+
+      <div className="text-center">
         <button
           onClick={handleComplete}
-          disabled={isCompleted}
+          disabled={!allFieldsFilled || isCompleted}
           style={{
-            backgroundColor: isCompleted ? "#10b981" : "#ed7c47",
-            color: "white",
+            backgroundColor: allFieldsFilled && !isCompleted ? "#ed7c47" : isCompleted ? "#10b981" : "#e5e7eb",
+            color: allFieldsFilled || isCompleted ? "white" : "#6b7280",
             border: "none",
             padding: "12px 24px",
             borderRadius: "8px",
             fontSize: "16px",
             fontWeight: "600",
-            cursor: isCompleted ? "default" : "pointer",
-            transition: "all 0.2s ease",
-          }}
-          onMouseEnter={(e) => {
-            if (!isCompleted) {
-              e.target.style.backgroundColor = "#de5a2c"
-            }
-          }}
-          onMouseLeave={(e) => {
-            if (!isCompleted) {
-              e.target.style.backgroundColor = "#ed7c47"
-            }
+            cursor: allFieldsFilled && !isCompleted ? "pointer" : "default",
           }}
         >
-          {isCompleted ? "✅ Section Complete!" : "💭 Complete My Reflection"}
+          {isCompleted
+            ? "✅ Section Complete!"
+            : allFieldsFilled
+              ? "💭 Complete My Reflection"
+              : "💭 Share Your Thoughts"}
         </button>
 
-        {processImprovement && challenges && (
-          <div className="bg-yellow-100 p-4 rounded-lg border-2 border-yellow-300">
-            <p className="text-yellow-800 font-medium">
-              🎉 Great reflection! Your ideas about improving <strong>{processImprovement}</strong> and addressing{" "}
-              <strong>{challenges}</strong> could spark real changes in your organization!
-            </p>
-          </div>
-        )}
-
         {isCompleted && (
-          <p className="text-green-600 font-medium">
-            Excellent brainstorming! Your reflections could spark real changes. Ready for the knowledge quiz?
+          <p className="mt-3 text-green-600 font-medium">
+            Excellent reflection! Ready to test your organizational AI knowledge?
           </p>
         )}
       </div>
@@ -825,27 +861,39 @@ function Section5({ onComplete }: { onComplete: () => void }) {
   const quizQuestions = [
     {
       id: "q1",
-      question: "What's a key opportunity for AI in organizations?",
-      options: ["Eliminating all human jobs", "Automating repetitive tasks", "Ignoring customer feedback"],
+      question: "What's the difference between AI automation and augmentation?",
+      options: [
+        "There is no difference",
+        "Automation replaces humans; augmentation enhances human capabilities",
+        "Augmentation is more expensive than automation",
+      ],
       correctAnswer: 1,
       explanation:
-        "AI's key opportunity is automating repetitive tasks, which frees up humans to focus on creative, strategic, and relationship-building work that adds more value.",
+        "Automation replaces human tasks entirely, while augmentation enhances human capabilities. Most successful AI implementations focus on augmentation, where AI and humans work together.",
     },
     {
       id: "q2",
-      question: "Which is a common AI adoption challenge?",
-      options: ["Too much data privacy", "High implementation costs", "Perfect accuracy"],
+      question: "Why is continuous learning important for organizational AI?",
+      options: [
+        "It makes AI systems more expensive",
+        "It helps AI improve over time with new data and feedback",
+        "It's not important for organizational AI",
+      ],
       correctAnswer: 1,
       explanation:
-        "High implementation costs are a major challenge for AI adoption, including technology infrastructure, training, and ongoing maintenance expenses.",
+        "Continuous learning allows AI systems to improve their performance over time by learning from new data and user feedback, making them more valuable and accurate as they're used.",
     },
     {
       id: "q3",
-      question: "Why collaborate with AI teams?",
-      options: ["To avoid using AI", "To align AI with organizational goals", "To ignore technical details"],
+      question: "What's the best approach when implementing AI in customer service?",
+      options: [
+        "Replace all human agents with AI",
+        "Use AI for common questions, humans for complex issues",
+        "Avoid AI in customer service entirely",
+      ],
       correctAnswer: 1,
       explanation:
-        "Collaborating with AI teams ensures that AI solutions align with business objectives and address real organizational needs effectively.",
+        "The best approach is to use AI for handling common, repetitive questions while having human agents focus on complex issues that require empathy, creativity, and problem-solving skills.",
     },
   ]
 
@@ -864,7 +912,8 @@ function Section5({ onComplete }: { onComplete: () => void }) {
     <div className="space-y-6">
       <div className="speech-bubble mb-6">
         <p className="text-lg text-gray-700">
-          Challenge yourself with this engaging quiz! Test your understanding of AI in organizational contexts. 🧠
+          Test your understanding of AI in organizational settings! Show off your strategic thinking about AI
+          implementation and impact. 🧠
         </p>
         <p className="text-sm text-gray-600 mt-2">
           <strong>Instructions:</strong> Answer all {quizQuestions.length} questions to complete this section.
@@ -895,8 +944,8 @@ function Section5({ onComplete }: { onComplete: () => void }) {
       {sectionComplete && (
         <div className="text-center p-4 bg-green-50 rounded-lg border-2 border-green-200">
           <p className="text-green-800 font-medium">
-            🎉 Excellent effort! Review any missed answers to deepen your understanding. You're ready for the final
-            challenge!
+            🎉 Excellent work! You've demonstrated strong understanding of AI's role in organizations. Ready to create
+            your action plan?
           </p>
         </div>
       )}
@@ -905,32 +954,31 @@ function Section5({ onComplete }: { onComplete: () => void }) {
 }
 
 function Section6({ onComplete }: { onComplete: () => void }) {
-  const [badgeName, setBadgeName] = useState("")
-  const [selectedBadge, setSelectedBadge] = useState("")
+  const [actionPlan, setActionPlan] = useState({
+    learn: "",
+    apply: "",
+    share: "",
+  })
   const [isCompleted, setIsCompleted] = useState(false)
+  const router = useRouter()
+
+  const handleActionChange = (key: string, value: string) => {
+    setActionPlan((prev) => ({ ...prev, [key]: value }))
+  }
 
   const handleComplete = () => {
     setIsCompleted(true)
     onComplete()
   }
 
-  const badgeSuggestions = [
-    "Innovation Champions",
-    "AI Pioneers",
-    "Future Forward Team",
-    "Digital Transformation Squad",
-    "Smart Solutions Crew",
-    "Tech Trailblazers",
-    "AI Ambassadors",
-    "Change Catalysts",
-  ]
+  const allActionsFilled = Object.values(actionPlan).every((value) => value.trim().length > 0)
 
   return (
     <div className="space-y-6">
       <div className="speech-bubble mb-6">
         <p className="text-lg text-gray-700 mb-4">
-          <strong>You've explored AI's potential in your organization!</strong> 🎉 From seizing opportunities to
-          tackling challenges, you're now ready to collaborate and innovate.
+          <strong>Congratulations on mastering AI in organizations!</strong> 🎉 You understand how AI transforms
+          workplaces, the key concepts of implementation, and your role in this exciting journey.
         </p>
       </div>
 
@@ -938,82 +986,103 @@ function Section6({ onComplete }: { onComplete: () => void }) {
         <div className="bg-green-50 p-6 rounded-lg border-2 border-green-200">
           <h3 className="font-bold text-lg text-green-800 mb-3">🏆 What You've Mastered</h3>
           <ul className="space-y-2 text-green-700">
-            <li>✓ AI's role across different industries</li>
-            <li>✓ Opportunities for AI adoption</li>
-            <li>✓ Common challenges and solutions</li>
-            <li>✓ Collaboration with AI teams</li>
+            <li>✓ AI's role across different departments</li>
+            <li>✓ Automation vs. augmentation concepts</li>
             <li>✓ Strategic decision-making with AI</li>
+            <li>✓ Organizational challenges and opportunities</li>
+            <li>✓ Your role in AI transformation</li>
           </ul>
         </div>
 
         <div className="bg-blue-50 p-6 rounded-lg border-2 border-blue-200">
           <h3 className="font-bold text-lg text-blue-800 mb-3">🎯 Next Steps</h3>
           <ul className="space-y-2 text-blue-700">
-            <li>➡️ Proceed to Module 5: The Future of AI</li>
-            <li>🤝 Start conversations with AI teams</li>
-            <li>💡 Propose AI solutions for your department</li>
-            <li>📊 Identify processes for AI enhancement</li>
+            <li>➡️ Proceed to Module 5: Future of AI</li>
+            <li>🤝 Collaborate on AI initiatives</li>
+            <li>💡 Identify AI opportunities in your work</li>
+            <li>📢 Become an AI advocate in your organization</li>
           </ul>
         </div>
       </div>
 
       <div className="bg-gradient-to-r from-purple-100 to-pink-100 p-6 rounded-lg border-2 border-purple-200 mb-6">
-        <h3 className="font-bold text-lg text-purple-800 mb-4">🏅 Fun Challenge: Design an "AI Dream Team" Badge!</h3>
+        <h3 className="font-bold text-lg text-purple-800 mb-4">📋 Create Your AI Action Plan</h3>
         <p className="text-purple-700 mb-4">
-          Create a badge name for your department (e.g., "Innovation Champions") and share it with your colleagues!
+          Plan your next steps to become an AI champion in your organization! This action plan will guide your continued
+          AI journey.
         </p>
 
         <div className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-purple-800 mb-2">Your AI Dream Team Badge:</label>
-            <input
-              type="text"
-              value={badgeName}
-              onChange={(e) => setBadgeName(e.target.value)}
-              placeholder="e.g., Innovation Champions, AI Pioneers..."
-              className="w-full p-3 border-2 border-purple-200 rounded-lg focus:border-purple-400 focus:outline-none"
+            <label className="block text-sm font-medium text-purple-800 mb-2">🎓 What will you learn more about?</label>
+            <textarea
+              value={actionPlan.learn}
+              onChange={(e) => handleActionChange("learn", e.target.value)}
+              placeholder="e.g., Research AI tools in my industry, take an advanced AI course..."
+              className="w-full p-3 border-2 border-purple-200 rounded-lg focus:border-purple-400 focus:outline-none h-20 resize-none"
             />
           </div>
 
           <div>
-            <p className="text-sm text-purple-600 mb-2">Need inspiration? Try one of these badge names:</p>
-            <div className="flex flex-wrap gap-2">
-              {badgeSuggestions.map((badge, index) => (
-                <button
-                  key={index}
-                  onClick={() => setBadgeName(badge)}
-                  className="px-3 py-1 bg-purple-200 text-purple-800 rounded-full text-sm hover:bg-purple-300 transition-colors"
-                >
-                  {badge}
-                </button>
-              ))}
-            </div>
+            <label className="block text-sm font-medium text-purple-800 mb-2">
+              🚀 How will you apply this knowledge?
+            </label>
+            <textarea
+              value={actionPlan.apply}
+              onChange={(e) => handleActionChange("apply", e.target.value)}
+              placeholder="e.g., Propose an AI chatbot for our customer service, identify automation opportunities..."
+              className="w-full p-3 border-2 border-purple-200 rounded-lg focus:border-purple-400 focus:outline-none h-20 resize-none"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-purple-800 mb-2">
+              👥 How will you share your knowledge?
+            </label>
+            <textarea
+              value={actionPlan.share}
+              onChange={(e) => handleActionChange("share", e.target.value)}
+              placeholder="e.g., Present AI insights to my team, mentor colleagues on AI basics..."
+              className="w-full p-3 border-2 border-purple-200 rounded-lg focus:border-purple-400 focus:outline-none h-20 resize-none"
+            />
           </div>
         </div>
       </div>
 
+      {allActionsFilled && (
+        <div className="bg-yellow-100 p-4 rounded-lg border-2 border-yellow-300">
+          <h4 className="font-bold text-yellow-800 mb-2">🎉 Outstanding Action Plan!</h4>
+          <p className="text-yellow-700 text-sm">
+            Your commitment to learning, applying, and sharing AI knowledge will make you a valuable AI champion in your
+            organization. Keep this plan handy as your roadmap!
+          </p>
+        </div>
+      )}
+
       <div className="text-center space-y-4">
         <Button
           onClick={handleComplete}
-          disabled={isCompleted}
-          className="bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-3 text-lg"
+          disabled={!allActionsFilled || isCompleted}
+          className={`font-semibold px-8 py-3 text-lg ${
+            allActionsFilled && !isCompleted
+              ? "bg-green-500 hover:bg-green-600 text-white"
+              : isCompleted
+                ? "bg-green-600 text-white"
+                : "bg-gray-300 text-gray-500 cursor-not-allowed"
+          }`}
         >
-          {isCompleted ? "🎓 Module Complete!" : "🏆 Complete Module 4"}
+          {isCompleted
+            ? "🎓 Module Complete!"
+            : allActionsFilled
+              ? "📋 Complete Module 4"
+              : "📋 Create Your Action Plan"}
         </Button>
-
-        {badgeName && (
-          <div className="bg-yellow-100 p-4 rounded-lg border-2 border-yellow-300">
-            <p className="text-yellow-800 font-medium">
-              🎉 Congratulations, <strong>{badgeName}</strong>! Your team is ready to lead AI innovation! 🏅
-            </p>
-          </div>
-        )}
 
         {isCompleted && (
           <div className="flex justify-center gap-4 mt-4">
             <button
               onClick={() => {
-                alert("Module 5 coming soon!")
+                router.push("/module5")
               }}
               style={{
                 backgroundColor: "#3b82f6",

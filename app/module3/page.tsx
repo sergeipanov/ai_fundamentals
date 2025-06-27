@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ProgressBar } from "@/components/progress-bar"
 import { QuizQuestion } from "@/components/quiz-question"
+import { Footer } from "@/components/footer"
 import { ChevronLeft, ChevronRight, CheckCircle } from "lucide-react"
 import { useRouter } from "next/navigation"
 
@@ -275,6 +276,7 @@ export default function Module3() {
           </button>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
